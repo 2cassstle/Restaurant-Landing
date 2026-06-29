@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MONOLITH // Split-Frame System</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="split-interface">
+        
+        <aside class="panel-left">
+            <div class="brand-block">
+                <div class="logo">MNLTH</div>
+                <span class="sub">CULINARY ATELIER</span>
+            </div>
+            
+            <nav class="matrix-nav">
+                <button class="nav-link active" onclick="showSubSection('welcome-node')">// MAIN PAGE</button>
+                <button class="nav-link" onclick="showSubSection('menu-node')">// GASTRONOMY</button>
+                <button class="nav-link" onclick="showSubSection('philosophy-node')">// OUR CONCEPT</button>
+                <button class="nav-link" onclick="showSubSection('contacts-node')">// CONTACTS & MAP</button>
+            </nav>
+
+            <div class="panel-footer-meta">
+                <span>SYSTEM V.26</span>
+                <span>MIAMI / FL</span>
+            </div>
+        </aside>
+
+        <main class="panel-center">
+            
+            <div id="welcome-node" class="node-content active">
+                <div class="hero-cover">
+                    <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?q=80&w=1200" alt="Monolith Restaurant Interior">
+                    <div class="hero-cover-overlay">
+                        <span class="node-num">WELCOME</span>
+                        <h1>THE MONOLITH EXPERIENCE</h1>
+                    </div>
+                </div>
+                <div class="node-body-text">
+                    <p class="lead-text">Welcome to a space where culinary boundaries disappear. We combine architectural design with primal cooking techniques to create unforgettable evenings.</p>
+                    <button class="action-btn-trigger" onclick="showSubSection('menu-node')">EXPLORE THE EXPERIENCE →</button>
+                </div>
+            </div>
+
+            <div id="menu-node" class="node-content">
+                <div class="node-header">
+                    <span class="node-num">01 / MENU</span>
+                    <h2>GASTRONOMIC MANIFESTO</h2>
+                </div>
+
+                <div class="manifesto-grid">
+                    <div class="dish-row">
+                        <div class="dish-meta">
+                            <span class="dish-name">Smoked Bone Marrow</span>
+                            <span class="dish-cost">$34</span>
+                        </div>
+                        <p>Wild ramps, pickled mustard seeds, charred sourdough bread.</p>
+                    </div>
+
+                    <div class="dish-row">
+                        <div class="dish-meta">
+                            <span class="dish-name">Glacial Langoustine</span>
+                            <span class="dish-cost">$48</span>
+                        </div>
+                        <p>Raw Icelandic langoustine, pressed green apple broth, dill oil emulsion.</p>
+                    </div>
+
+                    <div class="dish-row">
+                        <div class="dish-meta">
+                            <span class="dish-name">Dry-Aged Forest Duck</span>
+                            <span class="dish-cost">$52</span>
+                        </div>
+                        <p>14-day aged breast, fermented black currant glaze, roasted sunchoke.</p>
+                    </div>
+
+                    <div class="dish-row">
+                        <div class="dish-meta">
+                            <span class="dish-name">Charred Turbot Filet</span>
+                            <span class="dish-cost">$60</span>
+                        </div>
+                        <p>Cooked on open embers, brown butter dashi, coastal sea vegetables.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="philosophy-node" class="node-content">
+                <div class="node-header">
+                    <span class="node-num">02 / VISION</span>
+                    <h2>ARCHITECTURAL CONCEPT</h2>
+                </div>
+                <div class="vision-wrapper">
+                    <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?q=80&w=800" alt="Atelier Core" class="vision-img">
+                    <p class="vision-text">We stripped away the classic restaurant fluff. No white tablecloths, no unnecessary decorative elements. We work face-to-face with open fire and bio-dynamic ingredients supplied by hyper-local micro-farms daily.</p>
+                </div>
+            </div>
+
+            <div id="contacts-node" class="node-content">
+                <div class="node-header">
+                    <span class="node-num">03 / INFO</span>
+                    <h2>STUDIO LOCATIONS</h2>
+                </div>
+                <div class="contacts-wrapper">
+                    <div class="info-details-list">
+                        <div class="info-item-row">
+                            <strong>ADDRESS</strong>
+                            <p>412 Brickell Ave, Miami, FL 33131</p>
+                        </div>
+                        <div class="info-item-row">
+                            <strong>HOURS</strong>
+                            <p>Tuesday — Saturday / 17:00 — 23:00</p>
+                        </div>
+                        <div class="info-item-row">
+                            <strong>DIRECT LINE</strong>
+                            <p>desk@monolithatelier.com</p>
+                        </div>
+                    </div>
+                    <div class="embedded-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3592.564415843118!2d-80.13264662367123!3d25.78495447733857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b48b94155555%3A0x673ed14197a69c07!2sOcean%20Dr%2C%20Miami%20Beach%2C%20FL!5e0!3m2!1sen!2sus!4v1710000000000!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <section class="panel-right">
+            <div class="interactive-terminal">
+                <div class="terminal-header">
+                    <h3>ALLOCATION CONSOLE</h3>
+                    <div class="status-pulse"><span class="pulse-dot"></span> LIVE SEATS System</div>
+                </div>
+
+                <form id="consoleForm" novalidate>
+                    <div class="field-box">
+                        <label>GUEST IDENTIFICATION</label>
+                        <input type="text" id="gName" placeholder="ENTER YOUR FULL NAME" required>
+                        <span class="err" id="eName"></span>
+                    </div>
+
+                    <div class="field-box">
+                        <label>COMMUNICATION LINE</label>
+                        <input type="tel" id="gPhone" placeholder="ENTER PHONE NUMBER" required>
+                        <span class="err" id="ePhone"></span>
+                    </div>
+
+                    <div class="field-box">
+                        <label>TOTAL ATTENDEES</label>
+                        <div class="select-wrapper">
+                            <select id="gCount" required>
+                                <option value="" disabled selected>SELECT PARTY SIZE...</option>
+                                <option value="1">1 GUEST (COUNTER)</option>
+                                <option value="2">2 GUESTS (STANDARD)</option>
+                                <option value="4">4 GUESTS (HEARTH TABLE)</option>
+                            </select>
+                        </div>
+                        <span class="err" id="eCount"></span>
+                    </div>
+
+                    <button type="submit" class="terminal-btn">EXECUTE REQUEST</button>
+                </form>
+
+                <div id="terminalSuccess" class="terminal-receipt" style="display: none;">
+                    <div class="receipt-barcode">|||| | ||||| | ||| ||</div>
+                    <h4>ALLOCATION SECURED</h4>
+                    <p>REGISTERED: <span id="userNameReceipt"></span></p>
+                    <p class="receipt-note">A confirmation sequence has been dispatched to your device.</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <script>
+        function showSubSection(nodeId) {
+            document.querySelectorAll('.node-content').forEach(node => {
+                node.classList.remove('active');
+            });
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.classList.remove('active');
+            });
+
+            document.getElementById(nodeId).classList.add('active');
+            
+            const activeBtn = Array.from(document.querySelectorAll('.nav-link')).find(btn => btn.getAttribute('onclick').includes(nodeId));
+            if(activeBtn) activeBtn.classList.add('active');
+
+            const centerPanel = document.querySelector('.panel-center');
+            centerPanel.scrollTop = 0;
+        }
+
+        const form = document.getElementById('consoleForm');
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            let valid = true;
+
+            const name = document.getElementById('gName');
+            const phone = document.getElementById('gPhone');
+            const count = document.getElementById('gCount');
+
+            if(name.value.trim().length < 2) {
+                document.getElementById('eName').innerText = 'CRITICAL: IDENTIFICATION REQUIRED';
+                name.style.borderColor = '#d9534f';
+                valid = false;
+            } else {
+                document.getElementById('eName').innerText = '';
+                name.style.borderColor = '#ccc';
+            }
+
+            if(phone.value.trim().length < 7) {
+                document.getElementById('ePhone').innerText = 'CRITICAL: VALID WIRE LINE REQUIRED';
+                phone.style.borderColor = '#d9534f';
+                valid = false;
+            } else {
+                document.getElementById('ePhone').innerText = '';
+                phone.style.borderColor = '#ccc';
+            }
+
+            if(count.value === '') {
+                document.getElementById('eCount').innerText = 'CRITICAL: SIZE SPECIFICATION MISSING';
+                count.style.borderColor = '#d9534f';
+                valid = false;
+            } else {
+                document.getElementById('eCount').innerText = '';
+                count.style.borderColor = '#ccc';
+            }
+
+            if(valid) {
+                document.getElementById('userNameReceipt').innerText = name.value.trim().toUpperCase();
+                form.style.display = 'none';
+                document.getElementById('terminalSuccess').style.display = 'block';
+            }
+        });
+    </script>
+</body>
+</html>
